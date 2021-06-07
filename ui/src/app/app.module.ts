@@ -7,6 +7,9 @@ import { DatatableComponent } from './module/datatable/datatable.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
+import { MatInputModule, MatPaginatorModule, MatProgressSpinnerModule, 
+  MatSortModule, MatTableModule S} from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,13 @@ import { MatIconModule} from '@angular/material/icon';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
     MatToolbarModule,
     MatIconModule,
   ],
